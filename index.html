@@ -18,7 +18,7 @@
 body {
   margin: 0;
   font-family: 'Space Mono', monospace;
-  background-color: hsl(120, 100%, 98%);
+  background-color: #f5fff5;
 }
 
 /* Style the side navigation */
@@ -44,7 +44,7 @@ body {
 
 /* Change color on hover */
 .sidenav a:hover {
-  background-color: hsla(179, 100%, 85%, 0.4);
+  background-color: #f5fff5;
   color: black;
 }
 
@@ -52,10 +52,21 @@ body {
 .content {
   margin-left: 100px;
   padding-left: 20px;
+  padding-right: 5px;
 }
 
 /* Style the profile picture */ 
 .avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid 3px #00ff15;
+  border-width: 4px;
+}
+
+/* Style the profile picture */ 
+.avatar-small {
   vertical-align: middle;
   width: 70px;
   height: 70px;
@@ -104,12 +115,13 @@ h3 {
   font-size: 40px;
 }
 p1 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 40px;
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
   }
 p2 {
   font-family: 'Space Mono', monospace;
   font-size: 10px;
+  font-weight: bold;
   }
 p3 {
   font-family: 'Space Mono', monospace;
@@ -120,19 +132,33 @@ p3 {
 <body>
 
 <div class="sidenav">
-  <p><a href="https://zro.ec"><img src="zroec.png" alt="Avatar" class="avatar"></a></p>
-  <a href="https://zro.ec/education">Scope 1</a>
-  <a href="https://zro.ec/technology">Scope 2</a>
-    <a href="https://zro.ec/company">Scope 3</a>
+  <p><a href="https://zro.ec"><img src="0.png" alt="Avatar" class="avatar-small"></a></p>
+  <p><a href="https://zro.ec/join"><img src="zroec.png" alt="Avatar" class="avatar"></a></p>
+  <p2> emissions <p2>
+  <p><a href="#zero2030.net">zero2030.net</a></p>
+  <p><a href="#zero2040.net">zero2040.net</a></p>
+  <p><a href="#zero2050.net">zero2050.net</a></p>
   </div>
 
 <div class="content">
+  <br>
+  <br>
   <br>
   <br>
   <p3 id="demo"></p3>
   <br>
   <br>
   <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 id="zero2030.net">zero2030.net</h1>
+  <p1> a timeline to Net Zero 2030 </p1>
+  <h1 id="zero2040.net">zero2040.net</h1>
+  <p1> a timeline to Net Zero 2040 </p1>
+  <h1 id="zero2050.net">zero2050.net</h1>
+  <p1> a timeline to Net Zero 2050 </p1>
   <br>
   <br>
   <br>
@@ -193,23 +219,11 @@ var x = setInterval(function() {
   <br>
   <br>
 
-  <div class="footer">
-    <div class="row">
-  <div class="column">
-    <p><a href="https://zero2030.net"> <img src="0.png" alt="2030" style=height:4em; width:4em"> </a></p>
-    <figcaption>2 0 3 0</figcaption>
-  </div>
-  <div class="column">
-    <p><a href="https://zero2040.net"> <img src="0.png" alt="2030" style=height:4em; width:4em"> </a></p>
-    <figcaption>2 0 4 0</figcaption>
-  </div>
-  <div class="column">
-    <p><a href="https://zero2050.net"> <img src="0.png" alt="2030" style=height:4em; width:4em"> </a></p>
-    <figcaption>2 0 5 0</figcaption>
-  </div>
-</div>
+  <img src="favicon.png"
+       width="25px";
+       height="25px">
+
   <p2> zro.ec is a not for profit company limited by guarantee (Company No. 13349586) registered in England, United Kingdom </p2>
-</div>
 
 </div>
 
