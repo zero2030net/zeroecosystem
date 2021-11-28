@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>zro.ec .• Zero ecosystem</title>
+<title>Zero ecosystem</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -110,14 +110,26 @@ body {
 }
 
 .active, .accordion:hover {
-  background-color: #ffffff; 
+  background-color: #f5fff5; 
 }
 
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: white;
+  background-color: #f5fff5;
   overflow: hidden;
+}
+
+  .accordion:after {
+  content: '▼';
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "▲";
 }
   
   <style>
@@ -158,10 +170,10 @@ p3 {
 <div class="sidenav">
   <p><a href="https://zro.ec"><img src="0.png" alt="Avatar" class="avatar-small"></a></p>
   <p><a href="https://zro.ec/join"><img src="zroec.png" alt="Avatar" class="avatar"></a></p>
-  <p2> emissions <p2>
-  <p><a href="#Scope 1 emissions">Scope 1</a></p>
-  <p><a href="#Scope 2 emissions">Scope 2</a></p>
-  <p><a href="#Scope 3 emissions">Scope 3</a></p>
+  <p2> What are timelines? <p2>
+  <p><a href="#zero2030net">zero2030.net</a></p>
+  <p><a href="#zero2040net">zero2040.net</a></p>
+  <p><a href="#zero2050net">zero2050.net</a></p>
   </div>
 
 <div class="content">
@@ -176,19 +188,19 @@ p3 {
   <br>
   <br>
   
-  <button class="accordion"><h1 id="Scope 1 emissions">Scope 1 emissions</h1></button>
+  <button class="accordion"><h1 id="zero2030net">zero2030.net</h1></button>
 <div class="panel">
-  <p>This one covers the Green House Gas (GHG) emissions that an entity makes directly — for example while running its boilers and vehicles.</p>
+  <p>a countdown to Net Zero 2030</p>
 </div>
 
-<button class="accordion"><h1 id="Scope 2 emissions">Scope 2 emissions</h1></button>
+<button class="accordion"><h1 id="zero2040net">zero2040.net</h1></button>
 <div class="panel">
-  <p>These are the emissions it makes indirectly – like when the electricity or energy it buys for heating and cooling buildings, is being produced on its behalf.</p>
+  <p>a countdown to Net Zero 2040</p>
 </div>
 
-<button class="accordion"><h1 id="Scope 3 emissions">Scope 3 emissions</h1></button>
+<button class="accordion"><h1 id="zero2050net">zero2050.net</h1></button>
 <div class="panel">
-  <p>Now its confusing. In this category go all the emissions associated, not with the entity itself, but that the organisation is indirectly responsible for, up and down its value chain. For example, from buying products from its suppliers, and from its products when customers use them. Emissions-wise, Scope 3 is nearly always the big one.</p>
+  <p>a countdown to Net Zero 2050</p>
 </div>
 
 <script>
