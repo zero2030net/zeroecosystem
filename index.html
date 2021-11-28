@@ -95,6 +95,30 @@ body {
   clear: both;
   display: table;
 }
+
+  .accordion {
+  background-color: #f5fff5;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ffffff; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
   
   <style>
 body {
@@ -151,14 +175,40 @@ p3 {
   <br>
   <br>
   <br>
+  
+  <button class="accordion"><h1 id="Scope 1 emissions">Scope 1 emissions</h1></button>
+<div class="panel">
+  <p>This one covers the Green House Gas (GHG) emissions that an entity makes directly — for example while running its boilers and vehicles.</p>
+</div>
+
+<button class="accordion"><h1 id="Scope 2 emissions">Scope 2 emissions</h1></button>
+<div class="panel">
+  <p>These are the emissions it makes indirectly – like when the electricity or energy it buys for heating and cooling buildings, is being produced on its behalf.</p>
+</div>
+
+<button class="accordion"><h1 id="Scope 3 emissions">Scope 3 emissions</h1></button>
+<div class="panel">
+  <p>Now its confusing. In this category go all the emissions associated, not with the entity itself, but that the organisation is indirectly responsible for, up and down its value chain. For example, from buying products from its suppliers, and from its products when customers use them. Emissions-wise, Scope 3 is nearly always the big one.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
   <br>
   <br>
-  <h1 id="Scope 1 emissions">Scope 1 emissions</h1>
-  <p1> This one covers the Green House Gas (GHG) emissions that an entity makes directly — for example while running its boilers and vehicles </p1>
-  <h1 id="Scope 2 emissions">Scope 2 emissions</h1>
-  <p1> These are the emissions it makes indirectly – like when the electricity or energy it buys for heating and cooling buildings, is being produced on its behalf </p1>
-  <h1 id="Scope 3 emissions">Scope 3 emissions</h1>
-  <p1> Now its confusing. In this category go all the emissions associated, not with the entity itself, but that the organisation is indirectly responsible for, up and down its value chain. For example, from buying products from its suppliers, and from its products when customers use them. Emissions-wise, Scope 3 is nearly always the big one </p1>
   <br>
   <br>
   <br>
